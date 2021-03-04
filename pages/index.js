@@ -1,4 +1,9 @@
+<<<<<<< Updated upstream
 import styled from 'styled-components'
+=======
+import Menu from '../src/components/commons/Menu/index-Menu'
+import Footer from '../src/components/commons/Footer'
+>>>>>>> Stashed changes
 
 //const Title = styled.h1`
 //  font-size: 200px;
@@ -10,5 +15,21 @@ function Title(props) {
 }
 
 export default function Home() {
+<<<<<<< Updated upstream
   return <div><Title>Qualquer valor</Title>My Page</div>
+=======
+  return (
+    <div style={{
+     flex: '1',
+      display: 'flex',
+      flexWrap: 'wrap',
+      flexDirection: 'column',
+      justifyContent: 'space-between',
+    }}>
+    <Menu />
+    <Footer />
+    </div>
+
+     )
+>>>>>>> Stashed changes
 }
