@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 
 
 export const MenuWrapper = styled.nav`
-font-family:lucon;
+font-family:'Rubik', sans-serif;
 display:flex;
 align-items: center;
 justify-content: space-between;

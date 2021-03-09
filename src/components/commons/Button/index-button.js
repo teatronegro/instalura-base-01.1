@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { TextStyleVariants } from '../../foundation/Text/index';
+import { TextStyleVariants } from '../../Foundation/text/index';
 import get from 'lodash/get';
 
 
@@ -27,4 +27,5 @@ export const Button = styled.button`
   &:focus {
     opacity: .5;
   }
+  
 `;
