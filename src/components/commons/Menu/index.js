@@ -1,7 +1,7 @@
 import React from 'react';
 import { Logo } from '../../../theme/logo/Logo';
-import { Text } from '../../Foundation/Text/index';
-import { Button } from '../Button/index-button';
+import Text from '../../foundation/Text';
+import { Button } from '../Button/index';
 import { MenuWrapper } from './styles/MenuWrapper';
 
 
@@ -26,22 +26,23 @@ export default function Menu() {
     <MenuWrapper.LeftSide>
       <Logo />
       </MenuWrapper.LeftSide>
-    <MenuWrapper.CentralSide>
-      {links.map(function (link) {
-        return (
-          <li key ={link.url}>
-            <Text variant="smallestException" tag="a" href={link.url}>
-              {link.texto}
-            </Text>
-          </li>
-           )
-      })}
+
+      <MenuWrapper.CentralSide>
+        {links.map(function (link) {
+          return (
+            <li key={link.url}>
+              <Text variant="smallestException" tag="a" href={link.url}>
+                {link.texto}
+              </Text>
+            </li>
+          )
+        })}
       </MenuWrapper.CentralSide>
- <MenuWrapper.RightSide> {/* MenuWrapper.RightSide */}
-        <Button type="button" ghost variant="secondary.main">
+      <MenuWrapper.RightSide>
+        <Button ghost variant="secondary.main">
           Entrar
       </Button>
-       <Button type="button" variant="primary.main">
+      <Button variant="primary.main">
           Cadastrar
        </Button>
  </MenuWrapper.RightSide>

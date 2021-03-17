@@ -1,8 +1,7 @@
-export default function page404() {
+export default function Page404() {
     return (
-<div>
-    pagina 404
-</div>
-
+      <div>
+        Página 404
+      </div>
     )
-}
+  }
